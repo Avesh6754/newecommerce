@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:newecommerce/home/homescreen.dart';
 
 import 'Splashscreen/spalshscreen.dart';
 
-void main()
-{
-  runApp(const MyApp());
-
-  
+void main() {
+  runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -16,7 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/':(context)=>SplashScreen(),
+        '/': (context) => SplashScreen(),
+        '/home':(context)=>Homescreen(),
       },
     );
   }
